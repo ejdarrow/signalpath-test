@@ -7,7 +7,7 @@ object Main extends App {
   println("17 -> " + seventeen)
   assert(seventeen == "10926")
    
-  println("97 -> " + call(97))
+  println("90 -> " + call(90))
 
   def call(target:Int):String = {
 
