@@ -15,9 +15,6 @@ class HexConverter:
 
 	# This is the academic way.
 	def by_hand(self, hex_string:str) -> str:
-		"""
-
-		"""
 		binary = bin(int(hex_string, 16))
 		sixtyfour = self.make_it_base_64_from_binary(binary)
 		
