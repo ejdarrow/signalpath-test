@@ -78,7 +78,7 @@ object Main extends App {
 				subsum = string_addition(subsum, b)
 				j+= 1
 			}
-			subsum = subsum.concat("0".repeat(multiplier_array.length - (i+ 1)))
+			subsum = subsum.concat("0" * multiplier_array.length - (i+ 1))
 			sum = string_addition(sum, subsum)
 			i+=1
 
@@ -101,8 +101,8 @@ object Main extends App {
 		var leftchars = a.toCharArray.map(_.toString).reverse
 		var rightchars = b.toCharArray.map(_.toString).reverse
 
-		var left = leftchars.map(_.toInt).to(ArrayBuffer)
-		var right = rightchars.map(_.toInt).to(ArrayBuffer)
+		var left = leftchars.map(_.toInt).toBuffer
+		var right = rightchars.map(_.toInt).toBuffer
 
 		if(debug) println("left : " + left.toString)
 		if(debug) println("right : " + right.toString)
