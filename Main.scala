@@ -101,8 +101,8 @@ object Main extends App {
 		var leftchars = a.toCharArray.map(_.toString).reverse
 		var rightchars = b.toCharArray.map(_.toString).reverse
 
-		var left = leftchars.map(_.toInt).toArrayBuffer
-		var right = rightchars.map(_.toInt).toArrayBuffer
+		var left = ArrayBuffer(leftchars.map(_.toInt): _*)
+		var right = ArrayBuffer(rightchars.map(_.toInt): _*)
 
 		if(debug) println("left : " + left.toString)
 		if(debug) println("right : " + right.toString)
